@@ -1,0 +1,89 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <title>* ATM *</title>
+ </head>
+<body>
+ <h1><center>*   Automated Teller Machine   *</center></h1>
+ 
+ <center>
+<div id="foreground">
+<br>
+<br>
+ <div id ="screen">
+   <br>
+   <p>How much money do you want to transfer (Do not include $)</p>
+   <label>#</label><input name="amount" id="amount" type="text" value="0" ><br>
+   <p>What's your paypal account's email address</p>
+   
+   <label>#</label><input name="account" value="example@email.com" id="account" type="email">
+
+
+   <br>
+   <br>
+   <button id ="payYourself"></button>
+   <br>
+   <br>
+ </div>
+ <br>
+</div>
+
+
+<br>
+<p id="instructions">Hello you've stumbled into the Visa gift card ATM, which allows you to turn your Visa gift cards into cash, so you can save, invest, or spend this cash elsewhere. Basically you pay your self with Paypal and the ATM creates the Paypal button.</p>
+
+<script>
+
+var paybutton = document.getElementById('payYourself');
+
+paybutton.addEventListener('click', createPaypal);
+
+function createPaypal(){
+  var account=document.getElementById('account').value;
+  var amount = document.getElementById('amount').value;
+
+  if (amount !=0 || account !="example@email.com"){
+    button="<br><p>Press this Button to continue to Paypal and contiune as a guest to cash out your card</p><form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'> <input type='hidden' name='cmd' value='_xclick'> <input type='hidden' name='business' value="+account+"> <input type='hidden' name='lc' value='US'> <input type='hidden' name='item_name' value='Visa Gift Card ATM'> <input type='hidden' name='amount' value="+amount+"> <input type='hidden' name='currency_code' value='USD'> <input type='hidden' name='button_subtype'value='services'><input type='hidden' name='no_note' value='0'> <input type='hidden' name='tax_rate' value='0.000'> <input type='hidden' name='shipping' value='0.00'> <input type='hidden' name='bn' value='PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest'><input type='image' src='https://www.flaticon.com/svg/static/icons/svg/2577/2577736.svg' border='0' name='submit' alt='Get Your Visa Money with Paypal' height='7%' width='7%'><img alt='' border='0' src='https://www.flaticon.com/svg/static/icons/svg/2577/2577736.svg' width='1' height='1'></form><br> <p>Thank you come again and share!</p>";
+    var checkUsOut = "<p>Click below to check out MHC socials </p>"
+    document.getElementById("screen").innerHTML = button;
+    document.getElementById("instructions").innerHTML = checkUsOut;
+  }
+  
+
+
+  
+
+
+
+
+
+}
+
+</script>
+
+
+ 
+ <a href="https://www.instagram.com/memphishackclub/" target="_blank" class="fa fa-instagram"></a>
+<a href="https://twitter.com/MHackclub" target="_blank" class="fa fa-twitter"></a>
+<a href="https://www.facebook.com/groups/656997425191729" target="_blank" class="fa fa-facebook"></a>
+<a href="https://www.linkedin.com/company/memphis-hack-club/?viewAsMember=true" class="fa fa-linkedin" target="_blank"></a>
+
+
+ </center>
+</body>
+</html>
