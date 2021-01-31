@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>{{account}} is gettin ${{amount}}</title>
+    <style>
+        body{
+  background-color: #82a7af    ;
+  font-family: 'Nerko One', cursive;
+  color: #231662 ;
+  margin-left: 3em;
+  margin-right: 3em;  
+}
+
+h1{
+  font-family: 'Oswald', sans-serif;
+  color: #e2d818  ;
+  
+}
+
+#screen, #account, #amount{
+  width: 90%;
+  height:90%;
+  background-color: #242B6D  ;
+  font-family: 'Press Start 2P', cursive;
+  color:#68FF00 ;
+  
+  font-size: 1.2em;
+  border-radius: .25em;
+  opacity: .8;
+  animation: twinkle .5s infinite;
+  line-height: 2em;
+  
+
+  
+
+}
+
+p{
+  font-size: 1.8em;
+  
+}
+
+#instructions{
+  margin-left: 4.5em;
+  margin-right: 4.5em; 
+
+}
+
+
+button, #sendInfo{
+  background-color: #242B6D  ;
+  color: #68FF00  ;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2em;
+}
+
+label{
+  animation: flash .75s infinite;
+  font-size: 1.2em;
+}
+
+@keyframes flash{
+  0%{ color:#242B6D;}
+  50% { color: 68FF00;}
+}
+
+@keyframes twinkle{
+  0%{ opacity: .85;}
+  25%{opacity: .8;}
+  50%{opacity: .85;}
+  75%{ opacity: .9;}
+}
+
+#foreground{
+  background-color: #678991;
+  width: 90%
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 1em;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    
+}
+
+.fa-facebook {
+  background-color: #242B6D  ;
+  color:#eff9ff ;
+}
+.fa-twitter {
+  background-color: #242B6D  ;
+  color:#eff9ff ;
+}
+
+.fa-linkedin {
+  background-color: #242B6D  ;
+  color:#eff9ff ;
+}
+
+.fa-youtube {
+  background-color: #242B6D  ;
+  color:#eff9ff ;
+}
+.fa-instagram {
+  background: #242B6D; 
+  color: #eff9ff;
+}
+
+    </style>
+	</head>
+	<body>
+     <title>* ATM *</title>
+ </head>
+<body>
+ <h1><center>*   Automated Teller Machine   *</center></h1>
+ 
+ <center>
+<div id="foreground">
+<br>
+<br>
+ <div id ="screen">
+   {{button|safe}}
+   <br>
+   <br>
+ </div>
+ <br>
+</div>
+
+
+<br>
+<p id="instructions">Hello you've stumbled into the Visa gift card ATM, which allows you to turn your Visa gift cards into cash, so you can save, invest, or spend this cash elsewhere. Basically you pay your self with Paypal and the ATM creates the Paypal button.</p>
+
+
+<a href="https://www.instagram.com/memphishackclub/" target="_blank" class="fa fa-instagram"></a>
+<a href="https://twitter.com/MHackclub" target="_blank" class="fa fa-twitter"></a>
+<a href="https://www.facebook.com/groups/656997425191729" target="_blank" class="fa fa-facebook"></a>
+<a href="https://www.linkedin.com/company/memphis-hack-club/?viewAsMember=true" class="fa fa-linkedin" target="_blank"></a>
+
+
+ </center>
+
+      
+
+	</body>
+</html>
